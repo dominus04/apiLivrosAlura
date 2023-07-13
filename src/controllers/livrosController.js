@@ -53,7 +53,7 @@ class LivroController{
     }
 
     static mostrarLivrosPorEditora = async (req, res) => {
-        const editora = req.param("editora")
+        const editora = req.query.editora
         try {
             const livrosResultado = await livros.find({'editora': editora}).populate("autor", "nome").exec();
             res.status(200).json(livrosResultado);
