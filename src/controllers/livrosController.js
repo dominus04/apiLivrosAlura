@@ -52,6 +52,16 @@ class LivroController{
         }
     }
 
+    static mostrarLivrosPorEditora = async (req, res) => {
+        const editora = req.param("editora")
+        try {
+            const livrosResultado = await livros.find({'editora': editora}).populate("autor", "nome").exec();
+            res.status(200).json(livrosResultado);
+        } catch (err) {
+            res.status(500).json(err);
+        }
+    }
+
 }
 
 export default LivroController;
