@@ -9,7 +9,7 @@ class AutorController{
         } catch (err) {
             res.status(500).json(err);
         }
-    }
+    };
 
     static cadastrarAutor = async (req, res) => {
         try{
@@ -19,18 +19,18 @@ class AutorController{
         }catch(err){
             res.status(501).send({message: `${err.message} - erro ao cadastrar autor`});
         }
-    }
+    };
 
     static atualizarAutor = async (req, res) => {
         try {
             const id = req.params.id;
-            await autores.findByIdAndUpdate(id, {$set: req.body})
-            res.status(200).send({message: 'Autor atualizado com sucesso'})
+            await autores.findByIdAndUpdate(id, {$set: req.body});
+            res.status(200).send({message: "Autor atualizado com sucesso"});
         } catch (err) {
-            res.status(500).send({message: err.message})
+            res.status(500).send({message: err.message});
         }
         
-    } 
+    }; 
 
     static listarAutorPorId = async (req, res) => {
         try {
@@ -40,17 +40,17 @@ class AutorController{
         } catch (err) {
             res.status(500).json(err);
         }
-    }
+    };
 
     static deletarAutor = async (req, res) => {
         try {
             const id = req.params.id;
-            await autores.findByIdAndDelete(id)
-            res.status(200).send({message: "Autor removido com sucesso"})
+            await autores.findByIdAndDelete(id);
+            res.status(200).send({message: "Autor removido com sucesso"});
         } catch (err) {
-            res.status(500).send({message: err.message})
+            res.status(500).send({message: err.message});
         }
-    }
+    };
 
 }
 
