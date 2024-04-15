@@ -1,29 +1,29 @@
-# Api de Livros Alura
+# Alura Books API
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-Pequena Api criada como parte do curso de NodeJs com Express
+Small Api created as part of the NodeJs with Express course
 
 ---
 
-## Descrição
-O objetivo desta API é fazer o cadastro de livros com seus devidos autores e editoras, o sistema deve permitir que o usuário consulte livros por nome, editora, nome de Autor, bem como deve também garantir que os dados sejam armazenados da forma correta.
+## Description
+The purpose of this API is to register books with their respective authors and publishers. The system must allow the user to consult books by name, publisher, author name, and must also ensure that the data is stored correctly.
 
 ---
 
-## Aprendizados
+## Learnings
 
-Neste curso aprendemos como utilizar o express para controlar nossas rotas tornando mais fácil o direcionamento do cliente, utilizamos também o mongoose para manipular os dados em um banco de dados Atlas MongoDB, além de criar todas as tratativas de erros, deixando os nossos erros muito mais semânticos.
+In this course we learned how to use express to control our routes, making it easier to direct customers, we also use mongoose to manipulate data in an Atlas MongoDB database, in addition to creating all error handling, making our errors much more semantics.
 
-Com o mongoose fizemos toda a tratativa de criação de banco de dados, adição de registros, alteração, recuperação, exclusão, validação dos dados inseridos, recuperação utilizando regex e paginação da recuperação dos registros.
+With mongoose we did all the database creation, adding records, editing, retrieving, deleting, validating the entered data, retrieving using regex and paging the retrieval of records.
 
-O conteúdo foi bem fácil de ser absorvido, tive algumas dificuldades na hora de utilizar o mongoose, pois a versão que utilizei era superior à utilizada no curso, e a versão anterior dele, utilizava funções de callback, já a nova versão utiliza try/catch com async/await.
+The content was very easy to absorb, I had some difficulties when using mongoose, as the version I used was superior to the one used in the course, and the previous version used callback functions, while the new version uses try/catch with async/await.
 
-Foi utilizado também o NodeMon para que as atualizações fossem prontamente colocadas em funcionamento.
+NodeMon was also used so that updates could be put into operation promptly.
 
-Também aprendemos a utilizar o ESLint para padronizar nossos documentos e corrigir outros erros.
+We also learned how to use ESLint to standardize our documents and correct other errors.
 
-Outra ferramenta útil foi o dotenv, utilizados para criar variáveis de ambiente, para manter os dados sensíveis restritos.
+Another useful tool was dotenv, used to create environment variables to keep sensitive data restricted.
